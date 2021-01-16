@@ -1,0 +1,13 @@
+
+.easybank--features1 {
+  @include display-grid-row;
+}
+
+.easybank--features1__header--wrapper,
+.easybank--features1__section1--wrapper,
+.easybank--features1__section2--wrapper,
+.easybank--features1__section3--wrapper {
+  display: flex;
+  flex-direction: column;
+}
+

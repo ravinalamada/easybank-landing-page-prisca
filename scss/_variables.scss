@@ -1,0 +1,23 @@
+@import "./variables/colors";
+@import "./variables/custom-property";
+
+@mixin max-width-container {
+  max-width: 1440px;
+  margin-inline-start: auto;
+  margin-inline-end: auto;
+}
+
+@mixin display-row {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+}
+
+@mixin display-grid-row {
+  display: grid;
+  grid-template-rows: repeat(5, 1fr);
+  row-gap: 30px;
+  padding-left: 20px;
+  padding-right: 20px;
+}

@@ -1,0 +1,35 @@
+.masthead__nav {
+  padding: var(--based-value);
+  background-color: #f8f8f8;
+  position: absolute;
+  z-index: 3;
+  top: var(--value);
+  left: var(--value);
+  bottom: var(--value);
+  width: 100%;
+  height: max-content;
+  box-shadow: 0 0 5px rgba(0, 0, 0, 0.5);
+  transform: translateX(-100%);
+  transition: transform 0.3s;
+}
+
+body > input[type="checkbox"]:checked ~ header .masthead__nav {
+  transform: translateX(0%);
+}
+
+.masthead--wrapper {
+  @include display-row;
+}
+
+.masthead--close--menu--icon {
+  width: 100%;
+  text-align: right;
+}
+
+.masthead--open--menu {
+  display: block;
+  background-image: url('../icons/icon-menu-black.svg');
+  background-repeat: no-repeat;
+  color: transparent;
+}
+

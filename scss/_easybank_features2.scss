@@ -1,0 +1,20 @@
+.easybank--features2 {
+  background-color: white;
+  @include display-grid-row;
+  grid-template-rows: repeat(4, 1fr);
+}
+
+.easybank--features2__header--wrapper,
+.easybank--features2__section1--wrapper,
+.easybank--features2__section2--wrapper,
+.easybank--features2__section3--wrapper {
+  display: flex;
+  flex-direction: column;
+}
+
+.easybank--features2__header__img,
+.easybank--features2--section1__img,
+.easybank--features2--section2__img
+.easybank--features2--section3__img {
+  border-radius: 10px;
+}
