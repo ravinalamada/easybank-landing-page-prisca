@@ -2,7 +2,6 @@ body {
   margin: 0;
   padding: 0;
   text-align: center;
-  font-family: 'Public Sans', sans-serif;
   font-size: 18px;
   background-color: #fafafa; }
 
@@ -18,9 +17,6 @@ li {
 
 a {
   text-decoration: none; }
-
-img {
-  width: 100%; }
 
 :root {
   --based-value: 16px;
@@ -46,18 +42,19 @@ img {
   margin-top: 60px;
   margin-bottom: 60px; }
 
+.easybank--features1 {
+  display: grid;
+  grid-template-rows: repeat(5, 1fr);
+  row-gap: 30px;
+  padding-left: 20px;
+  padding-right: 20px; }
+
 .easybank--features1__header--wrapper,
 .easybank--features1__section1--wrapper,
 .easybank--features1__section2--wrapper,
 .easybank--features1__section3--wrapper {
   display: flex;
   flex-direction: column; }
-
-@media (min-width: 1000px) {
-  .easybank--features1--container {
-    max-width: 1114px;
-    margin-inline-start: auto;
-    margin-inline-end: auto; } }
 
 .easybank--features2 {
   background-color: white;
@@ -74,6 +71,12 @@ img {
 .easybank--features2__section3--wrapper {
   display: flex;
   flex-direction: column; }
+
+.easybank--features2__header__img,
+.easybank--features2--section1__img,
+.easybank--features2--section2__img
+.easybank--features2--section3__img {
+  border-radius: 10px; }
 
 .masthead__nav {
   padding: var(--based-value);
@@ -104,13 +107,9 @@ body > input[type="checkbox"]:checked ~ header .masthead__nav {
 
 .masthead--open--menu {
   display: block;
-  background-image: url("../icons/icon-menu-black.svg");
+  background-image: url("/icon-menu-black.e762beff.svg");
   background-repeat: no-repeat;
   color: transparent; }
 
-.easybank--features2__header__img,
-.easybank--features2--section1__img,
-.easybank--features2--section2__img
-.easybank--features2--section3__img {
-  border-radius: 10px;
-  width: 100%; }
+
+/*# sourceMappingURL=/css.ba368c66.css.map */

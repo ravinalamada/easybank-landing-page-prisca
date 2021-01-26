@@ -1,7 +1,7 @@
 
-.easybank--features1 {
-  @include display-grid-row;
-}
+// .easybank--features1 {
+//   @include display-grid-row;
+// }
 
 .easybank--features1__header--wrapper,
 .easybank--features1__section1--wrapper,
@@ -11,3 +11,10 @@
   flex-direction: column;
 }
 
+
+@media (min-width: 1000px) {
+
+  .easybank--features1--container {
+    @include max-width-container;
+  }
+}
