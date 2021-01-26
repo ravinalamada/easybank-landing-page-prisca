@@ -1,15 +1,32 @@
 .easybank--features2 {
-  background-color: white;
+  // background-color: white;
   @include display-grid-row;
   grid-template-rows: repeat(4, 1fr);
 }
 
-.easybank--features2__header--wrapper,
 .easybank--features2__section1--wrapper,
 .easybank--features2__section2--wrapper,
-.easybank--features2__section3--wrapper {
+.easybank--features2__section3--wrapper,
+.easybank--features2__section4--wrapper {
   display: flex;
   flex-direction: column;
+  background-color: white;
 }
 
 
+@media (min-width: 1000px) {
+
+  .easybank--features2--container {
+    @include breakpoint;
+  }
+
+  .easybank--features2__header {
+    text-align: left;
+  }
+
+  .easybank--features2--wrapper {
+    @include flexRow;
+    gap: 30px;
+    text-align: left;
+  }
+}

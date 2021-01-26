@@ -1,0 +1,30 @@
+
+
+.easybank__header--container {
+
+}
+
+.easybank__masthead__btn--req {
+  @include button;
+}
+
+@media (min-width: 1000px) {
+
+  .easybank__masthead--container {
+    @include breakpoint;
+    @include flexRow;
+    flex-direction: row-reverse;
+    gap: 100px;
+  }
+
+  .easybank__masthead--wrapper {
+    text-align: left;
+    flex-basis: 45%;
+  }
+
+  .easybank__masthead__img--wrapper {
+    flex-basis: 50%;
+  }
+}
+
+

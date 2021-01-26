@@ -1,35 +1,108 @@
-.masthead__nav {
-  padding: var(--based-value);
-  background-color: #f8f8f8;
+.header--container {
+  margin-left: 16px;
+  margin-right: 16px;
+}
+
+.header--wrapper {
+  @include flexRow;
+}
+
+.header__input {
+  visibility: hidden;
+}
+
+.header__nav {
+  width: 80%;
+  margin: auto;
+  padding: 3rem 1rem;
+  background: #fff;
+  box-shadow: -2px 4px 5px -4px #000000;
+  border-radius: 7px;
   position: absolute;
-  z-index: 3;
-  top: var(--value);
-  left: var(--value);
-  bottom: var(--value);
-  width: 100%;
-  height: max-content;
-  box-shadow: 0 0 5px rgba(0, 0, 0, 0.5);
-  transform: translateX(-100%);
-  transition: transform 0.3s;
+  transform: translateX(-140%);
+  left: 5%;
+  top: 90px;
+  transition: transform .2s;
+  margin-block-start: 34px;
 }
 
-body > input[type="checkbox"]:checked ~ header .masthead__nav {
+.header__list {
+  display: flex;
+  flex-direction: column;
+  gap: 1.5rem;
+}
+
+input[type="checkbox"]:checked ~ .header .header__nav {
   transform: translateX(0%);
+  z-index: 2;
 }
 
-.masthead--wrapper {
-  @include display-row;
+input[type="checkbox"]:checked ~ body {
+    z-index: 1;
+    background: rgba(0, 0, 0, 0.4);
 }
 
-.masthead--close--menu--icon {
-  width: 100%;
-  text-align: right;
-}
-
-.masthead--open--menu {
-  display: block;
-  background-image: url('../icons/icon-menu-black.svg');
-  background-repeat: no-repeat;
+.header--menu {
   color: transparent;
+  background-image: url('../icons/icon_menu.svg');
+  background-repeat: no-repeat;
+  background-position: right;
 }
 
+input[type="checkbox"]:checked ~ .header > .header--container > .header--wrapper > .header--menu {
+  background-image: url('../icons/icon-close.svg');
+  background-repeat: no-repeat;
+}
+
+.header__links {
+  color: black;
+  font-weight: 500;
+  font-size: 18px;
+}
+
+.header__items:not(:last-of-type) {
+  margin-bottom: 20px;
+}
+
+@media (min-width: 1000px) {
+
+  .header--container {
+    @include breakpoint;
+  }
+
+  .header--container,
+  .header__list {
+    @include flexRow;
+  }
+
+  .header--wrapper {
+    flex-basis: unset;
+  }
+
+  .header__nav {
+      background: none;
+      flex-basis: unset;
+      position: unset;
+      transform: translateX(0);
+      box-shadow: unset;
+      padding: 0;
+      width: auto;
+      top: 0;
+      left: 0;
+      margin-block-start: 0;
+      margin: 0;
+  }
+
+  .header__list {
+      margin: 0;
+  }
+
+  .header__items:not(:last-of-type) {
+    padding-right: 16px;
+    margin-bottom: 0;
+  }
+
+  .header--menu {
+    background-image: none;
+  }
+}

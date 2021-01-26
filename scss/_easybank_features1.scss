@@ -15,6 +15,25 @@
 @media (min-width: 1000px) {
 
   .easybank--features1--container {
-    @include max-width-container;
+    @include breakpoint;
+  }
+
+  .easybank--features1__header {
+    text-align: left;
+    max-width: 50%;
+  }
+
+  .easybank--features1--wrapper {
+    @include flexRow;
+    gap: 30px;
+    text-align: left;
+    padding-top: 30px;
+  }
+
+  .easybank--features1--section1__img,
+  .easybank--features1--section2__img,
+  .easybank--features1--section3__img,
+  .easybank--features1--section4__img {
+    width: 50px;
   }
 }

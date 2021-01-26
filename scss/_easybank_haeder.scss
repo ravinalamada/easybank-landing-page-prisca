@@ -1,11 +1,23 @@
-.masthead {
+.header {
   background-color: white;
   box-shadow: 0 0 5px rgba(0, 0, 0, 0.5);
   position: relative;
   top: -24px;
 }
 
-.masthead__heading {
+.header__heading {
   margin-top: 60px;
   margin-bottom: 60px;
+}
+
+.header__btn {
+  display: none;
+}
+
+@media (min-width: 1000px) {
+
+  .header__btn {
+    display: block;
+    @include button;
+  }
 }

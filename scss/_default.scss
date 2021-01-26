@@ -28,3 +28,13 @@ a {
 img {
   width: 100%;
 }
+
+button,
+fieldset {
+  border-color: transparent;
+}
+
+button,
+input {
+  cursor: pointer;
+}
