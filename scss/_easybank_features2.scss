@@ -14,9 +14,18 @@
     padding: 16px;
   }
 
-@media (min-width: 1000px) {
-  .easybank--features2--container {
-    @include breakpoint;
+  .easybank--features2__header__heading {
+    font-weight: 700;
+    font-size: 25px;
+  }
+
+  .easybank--features2--section1--name,
+  .easybank--features2--section2--name,
+  .easybank--features2--section3--name,
+  .easybank--features2--section4--name {
+    font-weight: 300;
+    font-size: 14px;
+    color:  hsl(233, 8%, 62%);
   }
 
   .easybank--features2--section1--wrapper,
@@ -29,7 +38,16 @@
     top: -16px;
     z-index: -1;
     height: 325px;
-    // padding-bottom: 20px;
+  }
+
+@media (min-width: 1000px) {
+
+  .easybank--features2 {
+    margin-top: 100px;
+  }
+
+  .easybank--features2--container {
+    @include breakpoint;
   }
 
   .easybank--features2__header {
@@ -40,5 +58,9 @@
     @include flexRow;
     gap: 30px;
     text-align: left;
+  }
+
+  .easybank--features2__header__heading {
+    font-size: 40px;
   }
 }

@@ -3,6 +3,10 @@
 //   @include display-grid-row;
 // }
 
+.easybank--features1 {
+  background-color: hsl(220, 16%, 96%);
+}
+
 .easybank--features1__header--wrapper,
 .easybank--features1__section1--wrapper,
 .easybank--features1__section2--wrapper,
@@ -11,8 +15,37 @@
   flex-direction: column;
 }
 
+.easybank--features1--section1__img,
+.easybank--features1--section2__img,
+.easybank--features1--section3__img,
+.easybank--features1--section4__img {
+  width: 50px;
+}
+
+.easybank--features1__header__heading {
+  font-weight: 700;
+  font-size: 25px;
+}
+
+.easybank--features1__header--desc {
+  color: hsl(233, 8%, 62%);
+  font-size: 16px;
+}
+
+.easybank--features2--section1--desc,
+.easybank--features2--section2--desc,
+.easybank--features2--section3--desc,
+.easybank--features2--section4--desc {
+  color:  hsl(233, 8%, 62%);
+  font-size: 16px;
+}
 
 @media (min-width: 1000px) {
+
+  .easybank--features1 {
+    margin-block-start: -69px;
+    padding-top: 60px;
+  }
 
   .easybank--features1--container {
     @include breakpoint;
@@ -23,6 +56,10 @@
     max-width: 50%;
   }
 
+  .easybank--features1__header__heading {
+    font-size: 38px;
+  }
+
   .easybank--features1--wrapper {
     @include flexRow;
     gap: 30px;
@@ -30,10 +67,4 @@
     padding-top: 30px;
   }
 
-  .easybank--features1--section1__img,
-  .easybank--features1--section2__img,
-  .easybank--features1--section3__img,
-  .easybank--features1--section4__img {
-    width: 50px;
-  }
 }
