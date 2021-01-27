@@ -1,23 +1,35 @@
 .easybank--features2 {
   // background-color: white;
-  @include display-grid-row;
+  // @include display-grid-row;
   grid-template-rows: repeat(4, 1fr);
 }
 
-.easybank--features2__section1--wrapper,
-.easybank--features2__section2--wrapper,
-.easybank--features2__section3--wrapper,
-.easybank--features2__section4--wrapper {
-  display: flex;
-  flex-direction: column;
-  background-color: white;
-}
-
+  .easybank--features2--section1--wrapper,
+  .easybank--features2--section2--wrapper,
+  .easybank--features2--section3--wrapper,
+  .easybank--features2--section4--wrapper {
+    display: flex;
+    flex-direction: column;
+    background-color: white;
+    padding: 16px;
+  }
 
 @media (min-width: 1000px) {
-
   .easybank--features2--container {
     @include breakpoint;
+  }
+
+  .easybank--features2--section1--wrapper,
+  .easybank--features2--section2--wrapper,
+  .easybank--features2--section3--wrapper,
+  .easybank--features2--section4--wrapper {
+    border-radius: 12px;
+    padding: 16px;
+    position: relative;
+    top: -16px;
+    z-index: -1;
+    height: 325px;
+    // padding-bottom: 20px;
   }
 
   .easybank--features2__header {
