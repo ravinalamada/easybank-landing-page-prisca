@@ -19,6 +19,13 @@
     font-size: 25px;
   }
 
+  .easybank--features2--section1__heading5,
+  .easybank--features2--section2__heading5,
+  .easybank--features2--section3__heading5,
+  .easybank--features2--section4__heading5 {
+    margin-bottom: 0.5rem;
+  }
+
   .easybank--features2--section1--name,
   .easybank--features2--section2--name,
   .easybank--features2--section3--name,
@@ -26,6 +33,7 @@
     font-weight: 300;
     font-size: 14px;
     color:  hsl(233, 8%, 62%);
+    margin-bottom: 0;
   }
 
   .easybank--features2--section1--wrapper,
@@ -37,7 +45,7 @@
     position: relative;
     top: -16px;
     z-index: -1;
-    height: 325px;
+    height: 300px;
   }
 
 @media (min-width: 1000px) {
