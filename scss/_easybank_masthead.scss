@@ -51,12 +51,14 @@
 
   .easybank__masthead--container {
     @include breakpoint;
+    max-width: 1236px;
+    margin-inline-end: unset;
     @include flexRow;
     flex-direction: row-reverse;
     background-image: url('../icons/bg-intro-desktop.svg');
     background-repeat: no-repeat;
-    background-position-x: 39vw;
-    background-position-y: 100%;
+    background-position-x: 49vw;
+    background-position-y: -27vh;
     position: unset;
     padding-bottom: 0;
     gap: 100px;

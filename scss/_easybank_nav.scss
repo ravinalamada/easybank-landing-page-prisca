@@ -32,6 +32,10 @@
     text-align: justify;
   }
 
+  .footer__items--active:not(:last-of-type) {
+    margin-bottom: 29px;
+  }
+
   .footer__items--active:last-of-type {
     text-align: unset;
   }
